@@ -16,20 +16,10 @@ else:
 
 # Zadanie
 
-import requests
-
 url = 'https://zerotojunior.dev/cezar.txt.'
 
 response = requests.get(url)
 
-# Sprawdź, czy żądanie zakończyło się sukcesem (kod odpowiedzi 200)
-if response.status_code == 200:
-    # Odczytaj zawartość pliku, uwzględniając odpowiednie kodowanie znaków
-    text = response.content.decode('UTF-8', errors='ignore')
-    print("Pobrany tekst:")
-    print(text)
-else:
-    print(f"Błąd pobierania pliku: {response.status_code}")
 
 def decrypt_caesar_cipher(text, shift):
     lowercase_alphabet = "aąbcćdeęfghijklłmnńoóprsśtuwyzźż"
