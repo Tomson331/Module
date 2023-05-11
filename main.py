@@ -52,3 +52,9 @@ def most_frequent_letter(text):
 
     most_frequent = max(letter_counts, key=letter_counts.get)
     return most_frequent
+
+def dzielenie(dzielna, dzielnik):
+    if(dzielnik == 0):
+        return
+    else:
+        return dzielna/ dzielnik
